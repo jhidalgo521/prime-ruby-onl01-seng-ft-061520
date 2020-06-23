@@ -8,13 +8,20 @@ def prime?(number)
   
   if number > 1 
    
-# prime number solution is to iterate 
+# prime number solution is to iterate range of numbers from 2 to nth - 1
+    
+    
     range = (start..number-1).to_a
     range.none? do |test_prime| 
       
-      number % test_prime == 0
+# next part is to check for any remainders, if its 0 that means its fully divisable and not prime!
+
+
+    number % test_prime == 0
     end
   else
     false
   end
 end
+
+# code isnt pretty but i use the comments to keep me focused on each portion of the problem
