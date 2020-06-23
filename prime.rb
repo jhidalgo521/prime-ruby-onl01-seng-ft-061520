@@ -8,7 +8,7 @@ def prime?(number)
   
   if number > 1 
    
-# prime number 
+# prime number solution is to iterate 
     range = (start..number-1).to_a
     range.none? do |test_prime| 
       
