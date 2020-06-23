@@ -1,6 +1,7 @@
 require 'pry'
 
-def rt(start)
+def rt(number)
+  start = 2
   range = (start..number-1).to_a
   binding.pry
 end
